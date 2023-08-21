@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1,
             shrink-to-fit=no"
     />
+     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -17,6 +18,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap"
@@ -26,7 +28,7 @@
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Le'valor Health</title>
+    <title>Home | Le'valor Health</title>
     <style>
       .phone-link {
         color: white;
@@ -98,9 +100,32 @@
         font-size: 40px;
         cursor: pointer;
       }
+        .floating-button {
+        position: fixed;
+        bottom: 40px;
+        right: 60px;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000; /* Set a high z-index to appear above other content */
+      }
+
+      /* Style for WhatsApp logo */
+      .whatsapp-logo {
+        width: 56px; /* Adjust the logo size */
+        height: 56px; /* Adjust the logo size */
+      }
     </style>
   </head>
-
+  <a
+    href="https://api.whatsapp.com/send?phone=7034555541"
+    target="_blank"
+    class="floating-button"
+  >
+    <img src="images/wsup-logo.png" alt="WhatsApp Logo" class="whatsapp-logo" />
+  </a>
   <body>
     <!--==================== Header ====================-->
     <header>
@@ -1051,7 +1076,7 @@
               <h4>Quick Links</h4>
               <ul>
                 <li>
-                  <a href="#"
+                  <a href="about.html"
                     ><i class="fas fa-angle-double-right"></i>About Us</a
                   >
                 </li>
