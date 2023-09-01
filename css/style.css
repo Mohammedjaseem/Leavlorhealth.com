@@ -39,9 +39,10 @@ URL: https://themeforest.net/user/surjithctly/
 
 .navbar-light .navbar-nav .nav-link {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   padding: 12px 22px;
   color: black;
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
@@ -67,7 +68,7 @@ URL: https://themeforest.net/user/surjithctly/
 }
 
 .nav-item a span {
-  font-size: 11px;
+  font-size: 15px;
   vertical-align: top;
   font-weight: 700;
   background: #4d72d0;
@@ -353,13 +354,15 @@ textarea {
   border-right: 0;
   border-left: 0;
   padding-left: 3px;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .form-group-cutom {
   position: relative;
   margin: 0 0 40px;
-  font-size: 13px;
+  font-size: 16px;
+    font-weight: 700;
 }
 .form-group-cutom i {
   position: absolute;
@@ -368,7 +371,8 @@ textarea {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 13px;
+  font-size: 16px;
+    font-weight: 700;
 }
 .form-group-cutom textarea {
   background: none !important;
@@ -539,6 +543,8 @@ a:focus {
 }
 
 .animated-hero {
+  max-height: 90%;
+
   position: absolute;
   bottom: 0;
   z-index: 10;
@@ -547,6 +553,9 @@ a:focus {
       -ms-transform: translateY(0);
           transform: translateY(0);
   will-change: transform, opacity;
+}
+.animated-hero img{
+    object-fit: contain;
 }
 
 .slick-current.slick-active .animated-hero {
