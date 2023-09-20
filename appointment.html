@@ -44,11 +44,28 @@
         justify-content: center;
         z-index: 1000; /* Set a high z-index to appear above other content */
       }
+      .floating-button-caller {
+        position: fixed;
+        border-radius: 50px;
+        background-color: #127fff;
+        bottom: 110px;
+        right: 60px;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000; /* Set a high z-index to appear above other content */
+      }
 
       /* Style for WhatsApp logo */
       .whatsapp-logo {
         width: 56px; /* Adjust the logo size */
         height: 56px; /* Adjust the logo size */
+      }
+      .caller-logo {
+        width: 50px; /* Adjust the logo size */
+        height: 50px; /* Adjust the logo size */
       }
     </style>
   </head>
@@ -62,7 +79,9 @@
       class="whatsapp-logo"
     />
   </a>
-
+  <a href="tel:+917034555541" target="_blank" class="floating-button-caller">
+    <img src="images/caller.png" alt="Caller Logo" class="caller-logo" />
+  </a>
   <body>
     <!--==================== Header ====================-->
     <!-- top bar -->
